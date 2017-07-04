@@ -47,7 +47,7 @@ LTT = (function() {
         this.list = list;
         this.options = options != null ? options : {};
         this.ParseOptions();
-        this.list = sortBy(this.list, this.key_parent, this.key_id);
+        // this.list = sortBy(this.list, this.key_parent, this.key_id);
         this.groupParent = unique(pluck(this.list, this.key_parent));
         return this;
     }
